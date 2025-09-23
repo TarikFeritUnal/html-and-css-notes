@@ -1,0 +1,47 @@
+<!--html dili tag denen etiketlerden olusur-->
+<!--bir web sayfasina sag tiklayip kaynagi goruntule dersek sayfanin html kodlarini gosterir.-->
+<!--(LAN) açılımı local area network yani yerel ağ.(WAN) açılımı ise wide area network yani geniş alan ağı.-->
+<!--(WWW) açılımı world wide web-->
+<!--Sitenizi internette yayınlamak için kiralanan sunucu disk alanına HOSTİNG denir-->
+<!--Girinti (indentation), yazdığın kodun satır başına biraz boşluk bırakılarak içe doğru kaydırılmasıdır. koda işlevsel olarak etki etmez ama kod okunurluğunu artırır.-->
+<!-- Girinti yapmak için shift+alt+f komutu kullanılır.-->
+<!--html etiketleri komutları genel olarak açılış etiketi kapanış etiketi ve içerikten oluşur.-->
+<!--her html kodunun kendine ait özellikleri vardır bunlar etiketin içine yazılır.örn  <p özellik="değer">komut içeriği </p>-->
+<!--html etiketleri web tarayıcısına içerikleri nasıl göstereceğini söyler. -->
+<!--html büyük küçük harfe duyarlı bir dil değildir.-->
+
+<!DOCTYPE html> <!-- bu sayfanın bir html5 sayfası olduğunu gösterir.döküman tipini belirler.genelde bu komutla başlanır sayfaya.-->
+
+<html> <!--tüm html kodları <html> ile başlar </html> ile biter.HTML sayfasının hangi dilde olduğunu belirtmek için html etiketinin lang özelliğini kullanırız.örn: <html lang="tr">.--> 
+
+    <head> <!--head etiketi arasındaki kodlar, sunucu ve arama motorları ile ilgili bilgileri ve özellikleri içerir.-->
+        <title>Sayfa Başlığı</title> <!-- title komutu html dosyamızı tarayıcıda açtığımız zaman açılan sekmede ne yazacağını belirler-->
+        <meta charset="UTF-8"> <!-- Türkçe karakterlerin düzgün görünmesini sağlar.<head> tagı içine yazılmalıdır.-->
+    </head>
+
+    <body> <!--body etiketi ise ziyaretçiye gösterilecek içeriği barındırır.-->
+        <h1>1. seviye başlık etiketi</h1> <!--h1 etiketi başlık etiketidir sayısı ise kaçıncı seviyeden başlık olduğunu belirtir 1. seviye en büyük başlıktır 6 ya doğru küçülür.-->
+        <h2>2. seviye başlık etiketi</h2>
+
+        <p>This is a paragraph.</p> <!-- p etiketi paragraf etiketidir.sayfa sonuna gelene kadar tek satırda kalır ondan sonra alt satıra geçer.alt satıra geçmek için br komutunu kullanırız.-->
+        <p>This is a paragraph.</p>
+
+        <a href="https://www.google.com">Google’a git</a> <!--href özelliği link koymayı sağlar tırnak içine site bağlantısı yazılır.ardından da tıklama linkinde ne yazacağı yazılır.-->
+        <br>
+        <img src="image (1).jpg" alt="Ai car" width="300" height="300"> <!--img etiketi resim koymaya yarar src kaynak, alt resim yüklenmezse çıkacak yazı,width genişlik ayarı,height yükseklik ayarı.resmin konumunu ise html ile yapamayız css gerekir.-->
+
+
+        <br><b>Kalın yazı</b>
+        <br><i>İtalik yazı</i>
+        
+        <br> <p style="color:rgb(194, 178, 91);">This is a paragraph.</p> <!--style özelliği ile paragrafın rengini ayarlayabiliyoruz.-->
+
+        adfgadgaad
+        adgadgdaff
+        <br>asfadgadgaa <!--br kodu alt satıra geçmeye yarar.Bitiş etiketi yoktur.-->
+
+
+    </body>
+
+</html>
+<!--tüm html kodları <html> ile başlar </html> ile biter-->
