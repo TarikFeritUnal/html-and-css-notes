@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+    <head>
+        <title>Online Ders 2</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body style="background-color: bisque;"> <!--style komutu ile istersek body kısmını yanı kullanıcıya gösterilen kısmın özelliklerini değiştirebiliriz.bu komutlar css komutlarıdır html ile yapamayız.Aynısını paragraflar veya başlıklar içinde yapabiliriz.-->
+
+        <h1 style="background-color: aqua;" title="Ana Başlık" id="baslik1">başlık</h1> <!--id özelliği bir html etiketine özel bir isim vermemizi sağlar ve bu isimle bu etiket üzerinde css ve javascript işlemleri yapabilmemizi sağlar.her id benzersiz olmalı.-->
+        
+        <hr> <!--hr komutu araya yazıldığı konuma sayfa boyu çizgi atmayı sağlar. Boşluk tagı olduğu için bitiş etiketi yoktur.-->
+        
+        <h2 class="kalin">başlık2</h2> <!-- class özelliği daha önceden yazılmış bir css kodunun etiket içindeki html komutuna uygulanmasını sağlıyor.-->
+
+        <h1 style="color: aquamarine;">Renkli Title</h1> <!--style özelliği html etiketine css özellikleri uygulanmasını sağlar.-->
+        
+        <h1 title="Hatalı Yazım" style="background-color: black;" style="color: aquamarine;">Renkli Title</h1> <!--Bu kullanım yanlıştır html dili sadece ilk yazılan style özelliğini kabul eder.çünkü html dili anahtar-değer mantığı ile çalışır o yüzden her bir elementin tekbir özniteliğini alır diğerlerini yok sayar.doğru kullanım yapmak için tüm style özelliklerini tek bir yerde yazmak gerekir.-->
+
+        <h1 title="Doğru Yazım " style="background-color: black; color: aquamarine;">Renkli Title</h1> <!-- bu kullanım doğrudur.-->
+
+        <h1 style="font-family:verdana;">Verdana Fontunda Yazılmış Başlık</h1> <!--style ın bir özelliğide font family bununla birlikte içine yazılan yazılar o fontda olur-->
+        <p style="font-family: 'Courier New'; "><b>Courier Fontunda Yazılmış Paragraf</b></p>
+
+        <h1 style="font-size: 300%;">%300 büyütülmüş başlık</h1> <!--font size ile fontun büyüklüğünü değiştirebiliriz.-->
+        <h1 style="font-size: 500%;">%500 büyütülmüş başlık</h1>
+
+        <h1 style="text-align:center; font-size: 300% ;">Centered Heading</h1> <!--text-align:center  özelliği ile yazılan paragraflar otomatik olarak sitenin ortasına gelir. bu da bir css özelliğidir sade html ile yapılamaz. -->
+        <p style="text-align:center; font-size: 200%;">Centered paragraph.</p>
+
+
+
+        <h1 title="Makale Başlığı">Yazılım Mühendisliği</h1> <!--title özelliği html komutu yani yazının üzerine gidince bir açıklama metni görülmesini sağlar.-->
+
+        <p title='John "ShotGun" Nelson'>John with double quotes</p> <!--çift tırnak ile yazmak istiyorsak bu şekilde yazmamız gerekiyor-->
+        <p title="John 'ShotGun' Nelson">John with single quotes</p> <!--tek tırnak ile yazmak istiyorsak bu şekilde yazmamız gerekiyor-->
+
+        <pre> <!--pre tagı p tagına nazaran içindeki boşlukları girintileri ve satır atlamalarını aynen korur.kod editörüne nasıl yazıldıysa öyle algılar.-->
+            dgksşdgkdlgkaşsg   
+        adfşljadfşajdgş    adsfafa
+                    asfsa
+
+                    sfafadfgfad
+
+                    adggadgaa
+        </pre>
+
+
+    </body>
+
+</html>
