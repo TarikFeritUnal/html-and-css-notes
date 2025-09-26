@@ -4,6 +4,8 @@
     <head>
         <title>Online Ders 2</title>
         <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="1200000">  <!-- sayfa x saniyede bir yenilenir. Eğer sayfanın içeriği çok sık değişiyorsa bu kodu kullanmak mantıklıdır.-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- sayfanın mobil cihazlarda düzgün görünmesini sağlar.kullanıcının cihazının özelliklerine uyum sağlar. initial scale komutunun anlamı ise sayfa açılırken %100 boyutu ile açılsın.-->
     </head>
 
     <body style="background-color: bisque;"> <!--style komutu ile istersek body kısmını yanı kullanıcıya gösterilen kısmın özelliklerini değiştirebiliriz.bu komutlar css komutlarıdır html ile yapamayız.Aynısını paragraflar veya başlıklar içinde yapabiliriz.-->
@@ -20,6 +22,18 @@
 
         <h1 title="Doğru Yazım " style="background-color: black; color: aquamarine;">Renkli Title</h1> <!-- bu kullanım doğrudur.-->
 
+        
+        <a href="https://www.google.com" target="_blank">Google yeni sekmede</a> <!--target="_blank" özelliği linke tıklandığında linkin yeni bir sekmede açılmasını sağlar.-->
+        <br>
+          <a href="https://www.google.com" target="_self">Google Aynı sekmede</a> <!--target="_self" özelliği linke tıklandığında linkin aynı sekmede açılmasını sağlar.(varsayılan olarak böyle target özelliğini eklemediğimiz zamanda bu şekilde aynı sekmede açar.)-->
+            <br>
+          <a href="https://www.google.com" target="_parent">Google üst sekmede</a> <!--target="_parent" özelliği linke tıklandığında linkin üst sekmede açılmasını sağlar.-->
+            <br>
+          <a href="https://www.google.com" target="_top">Google en üst sekmede</a> <!--target="_top" özelliği linke tıklandığında linkin en üst sekmede açılmasını sağlar.-->
+            <br>
+          <a href="https://www.google.com" style="color: red;" >Google Kırmızı Link</a> <!--linkin rengini değiştirmek için style özelliği kullanılır.diğer style özelliklerinide aynı şekilde kullanabiliriz.-->
+
+         
         <h1 style="font-family:verdana;">Verdana Fontunda Yazılmış Başlık</h1> <!--style ın bir özelliğide font family bununla birlikte içine yazılan yazılar o fontda olur-->
         <p style="font-family: 'Courier New'; "><b>Courier Fontunda Yazılmış Paragraf</b></p>
 
@@ -46,6 +60,12 @@
                     adggadgaa
         </pre>
 
+        <!--Script tagı html içinde JavaScript kodlarını yazmamızı sağlar.interaktif özellikler eklemek hesaplamalar yapmak kullanıcı etkileşimleri  gibi birçok işlemi yapmamızı sağlar.-->
+        <script>
+            alert("Merhaba Dünya"); //alert komutu ile ekrana uyarı penceresi açılır.
+
+        </script>
+        <!--kodun okunurluğu için <script> etiketi <body> etiketinin kapanış etiketinden önceki yere yazılır-->
 
     </body>
 
