@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <h1>Başlık...</h1>
+        <p id="p1" style="background-color: red; color: gold;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ducimus sapiente, voluptatibus impedit,
+         tempore et eum maiores accusamus sequi, eius labore repudiandae vero? Ea obcaecati, dolore sequi id expedita molestias.</p>
+        
+        <p id="p2" style="background-color: red; color: white;">Lorem ipsum dolor sit amet <strong>consectetur</strong> adipisicing elit. Veniam ducimus sapiente, voluptatibus impedit,
+         tempore et eum maiores accusamus sequi, eius labore repudiandae vero? Ea obcaecati, dolore sequi id expedita molestias.</p>
+
+            <p><strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias sit quidem quod autem praesentium natus! Voluptatum alias porro incidunt placeat
+                 ab fuga consequatur! Id voluptates ad corporis placeat exercitationem non.</strong></p> <!--strong etiketi kalın yazı için kullanılır ve semantik bir etikettir.-->
+
+             <p><em>Lorem ipsum dolor sit amet consectetur adipisicing <strong>elit.</strong> Magni iste eum velit, dolor illo cum nemo nam. Sapiente cum, consectetur illo quam asperiores 
+                molestias ullam fugiat dolore rem, quasi facilis.</em></p> <!--em etiketi italik yazı için kullanılır ve semantik bir etikettir.-->
+                
+                <p><u>Lorem, <mark> comolokko </mark>dolor sit amet consectetur adipisicing elit. Delectus error commodi nobis doloribus laboriosam. Nostrum alias id eum recusandae nihil
+                     officiis aperiam nam voluptates repellat ipsum, corporis maxime odio mollitia.</u></p> <!--u etiketi altı çizili yazı için kullanılır.-->
+
+              <p>Lorem ipsum dolor <sub>comolokko </sub> sit amet consectetur   x<sup>2</sup>    adipisicing elit. Nihil magnam quisquam delectus error? Accusantium animi voluptatum rem, explicabo doloremque, modi nihil
+                 reprehenderit quos ipsam veritatis dignissimos temporibus iste dolores nulla.</p> <!--sub etiketi alt simge için kullanılır.örneğin kimya formüllerinde kullanılır.-->
+                 <!--sup etiketi üst simge için kullanılır.örneğin matematikte üslü sayılarda kullanılır.-->
+
+                  <p>H<sub>2</sub>O</p>
+                  <p>E = mc<sup>2</sup></p>
+
+                 <br>
+                 <code>int x : 5; <!-- code etiketi kod parçalarını göstermek için kullanılır.--> <!--code etiketi yazı tipi olarak monospace fontunu kullanır.-->
+                    <br> x = x * x;  // x in karesi
+                    <br> System.out.println(x);  // ekrana yazdırma
+                 </code>
+                 
+                 <!--span etiketi bir css kodu uygulanmış içerik içerisindeki bir kısma ayrıca css kodu uygulamamızı sağlar.-->
+                 <p style="color: red;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span style="color: aquamarine;">doloremque,</span>,  voluptatum ipsum libero
+                   velit est dolores incidunt impedit numquam praesentium nulla officia optio eligendi ipsam. Ab quasi fuga ullam provident.</p>
+                   <!--span etiketi inline bir etikettir. Yani satır içinde kullanılır ve satırın tamamını kapsamaz.-->
+
+                   <hr>
+
+                   <!--html sayfalarında liste oluşturmak için <ol> (ordered list,sıralı liste) ve <ul> (unordered list,madde imli liste) kullanılır-->
+
+                     <h1>Liste Örnekleri</h1>
+
+                     <h2>Alışveriş Listesi:</h2>
+                     <ul> <!--ul etiketi madde imli liste için kullanılır.-->
+                        <li>Süt</li>
+                        <li>Ekmek</li>
+                        <li>Yumurta</li>
+                     </ul>
+
+                     <h2>Yapılacaklar Listesi:</h2>
+                     <ol> <!--ol etiketi sıralı liste için kullanılır.-->
+                        <li>Ödev yapmak</li>
+                        <li>Kitap okumak</li>
+                        <li>Alışverişe gitmek</li>
+                     </ol>
+
+                     <h2>Yapılacaklar Listesi:</h2>
+                     <ol start="5"> <!--ol etiketi sıralı liste için kullanılır. start özelliği ile liste numarasının hangi sayıdan başlamasını istediğimizi belirleyebiliriz.-->
+                        <li>Ödev yapmak</li>
+                        <li>Kitap okumak</li>
+                        <li>Alışverişe gitmek</li>
+                     </ol>
+
+                     <h2>Yapılacaklar Listesi:</h2>
+                     <ol start="5" reversed> <!--ol etiketi sıralı liste için kullanılır. reversed özelliği ile liste numaralarının ters sırada olmasını sağlar.-->
+                        <li>Ödev yapmak</li>
+                        <li>Kitap okumak</li>
+                        <li>Alışverişe gitmek</li>
+                     </ol>
+
+                     <h2>Roma Rakamları</h2>
+                     <ol type="I"> <!--ol etiketi sıralı liste için kullanılır. type özelliği ile liste numaralarının hangi türde olacağını belirleyebiliriz.örneğin I büyük roma rakamı, i küçük roma rakamı, A büyük harf, a küçük harf, 1 normal sayı.-->
+                        <li>Ödev yapmak</li>
+                        <li>Kitap okumak</li>
+                        <li>Alışverişe gitmek</li>
+                        <li>Kod yazmak</li>
+                        <li>Film izlemek</li>
+                     </ol>
+
+                     <h2>Katmanlı Liste</h2> <!--katmanlı liste oluşturmak için liste içinde liste oluşturabiliriz.-->
+                     <dl>
+                        <dt>Kahveler</dt> <!--dl etiketi tanımlama listesi için kullanılır. dt tanımlama terimi, dd ise tanımlama açıklaması için kullanılır.-->
+                        <dd>Türk Kahvesi</dd>
+                        <dd>Americano</dd>
+                        <dd>Espresso</dd>
+                        <dd>Latte</dd>
+                        <dt>Çaylar</dt>
+                        <dd>Yeşil Çay</dd>
+                        <dd>Siyah Çay</dd>
+                        <dd>Bitki Çayı</dd>
+                        
+                     </dl>
+
+                     <hr>
+                     <br>
+
+                     <p><small>Küçük paragraf</small></p> <!--small etiketi paragrafın daha küçük görünmesini sağlar.-->
+                     <p> <mark>Normal paragraf</mark></p><!--mark etiketi paragrafın fosforlu kalemle işaretlenmiş gibi görünmesini sağlar.-->
+                     <p> <u>Normal paragraf</u></p><!--u etiketi paragrafın altının çizilmesini sağlar.-->
+                     <p>afalkfhaljhad adfjlhaf <del>afjafıjaffalkdf</del> </p><!--del etiketi metnin üstünün çizilmesini sağlar.-->
+
+
+
+
+    </body>
+</html>
