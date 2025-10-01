@@ -1,0 +1,44 @@
+<!--Resim işlemlerini tamamladıktan sonra site yayınlandığında kullandığımız resimleride sunucuya göndermemiz gerekir aksi takdirde resimler gözükmez. -->
+<!--kullandığımız resimlerin türü png yada jpeg gibi uyumlu formatlar olmak zorundadır.-->
+<!--alt tagı resim yüklenmezse çıkacak olan yazıyı belirler.-->
+<!--resimlerin boyutlandırılması için width ve height özellikleri kullanılır.-->
+<!--resimlerin boyutlandırılması için yüzde değeri de kullanılabilir.örneğin width="50%" gibi-->
+<!--iframe etiketi başka bir web sayfasını mevcut sayfa içinde görüntülememizi sağlar.-->
+<!--title tagı ise resmin üzerine gelince çıkacak olan yazıyı belirler.-->
+<!-- favicon resimleri web sayfamızın en üstündeki sekmede görülen 16x16 boyutundaki ico formatlı resimlerdir.kodlar head bölümüne yazılır buna dikkat etmek gerekir.-->
+ 
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+
+    </head>
+
+    <body>
+        <h1>Resim İşlemleri</h1>
+
+        <h2>Albüm Kapakları:</h2>
+
+        <h3>Chase Atlantic:</h3>
+        <img src="resimler/chaseatlantic.jpg" alt="Chase Atlantic" height="500" > <!--resim yolu doğru yazılmalı.resim dosyası html dosyası ile aynı klasörde ise sadece resim adı ve uzantısı yazılır. tek bir parametre yazılırsa diğeride ona oranlı olur, otomatik ölçeklendirme yapar.-->
+        
+        <hr>
+        <h3>Celldweler:</h3>
+        <img src="resimler/celldweler.jpg" alt="Celldweller" width="500" height="500" title="kapak fotosu"> <!--resim boyutlandırma için width ve height özellikleri kullanılır.boyutlandırma yapılmazsa sayfanın boyutuna göre otomatik ölçeklendirir. sadece bir değişken değiştirilirse-->
+
+        <br>
+
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3m39ss06okbvvk1Ro8HmUN?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+        <br>
+
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3m39ss06okbvvk1Ro8HmUN?utm_source=generator" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    
+        <br>
+
+        
+
+    </body>
+</html>
