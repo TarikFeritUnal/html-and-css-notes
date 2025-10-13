@@ -1,0 +1,84 @@
+<!--ziyaretçiden veri almaya yarayan elemanlara form elemanları denir.-->
+<!--form elemanı bir kapsayıcıdır. form elemanının içine input, textarea, button gibi elemanlar yerleştirilir.-->
+<!--form elemanının bazı özellikleri vardır.-->
+<!--name: forma isim vermek için kullanılır.-->
+<!--action: forma girilen verilerin hangi sayfaya gönderileceğini belirlemek için kullanılır.-->
+<!--method: hedef sayfaya gönderilme yöntemini belirlemek için kullanılır. get ve post olmak üzere iki yöntem vardır. get yöntemi verileri URL üzerinden gönderir. post yöntemi ise verileri gizli olarak gönderir.-->
+<!--enctype: form verilerinin nasıl kodlanacağını belirler.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form İşlemleri</title>
+    </head>
+
+    <body>
+        
+        <h1>Üye Kyıt Formu</h1>
+
+        <form name="kayit" action="kayit.js" method="get"> <!-- form elemanı oluşturulur. action özelliği ile verilerin gönderileceği sayfa belirlenir. method özelliği ile gönderme yöntemi belirlenir.-->
+            <label for="ad">Adınız:</label> <!-- label elemanı ile form elemanlarına etiket eklenir. for özelliği ile hangi form elemanına etiket ekleneceği belirlenir.-->
+            <input type="text" id="ad" name="ad" required> <!-- bir form elemanı oluşturmak için input elemanı kullanılır.type elemanı ilede bu elemanın ne tür bir eleman olduğu belirlenir.-->
+            <br><br>
+
+            <label for="soyad">Soyadınız:</label>
+            <input type="text" id="soyad" name="soyad" size="30" maxlength="10" required> <!-- size özelliği ile input elemanının genişliği belirlenir. maxlength özelliği ilede en fazla kaç karakter girilebileceği belirlenir.-->
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required> <!-- email türü input elemanı, kullanıcının geçerli bir email adresi girmesini sağlar.--> <!--required kodu ile alanını doldurulması gerektiğini belirtiriz. form elemanı dolmadığında buttonlar çalışmaz.-->
+            <br><br>
+
+            <label for="websitesi">Websiteniz:</label>
+            <input type="url" id="websitesi" name="websitesi" placeholder="Örn: www.google.com"> <!-- placeholder özelliği ile input elemanının içinde gri renkte bir metin gösterilir. bu metin, kullanıcının ne tür bir veri girmesi gerektiğini belirtir. web sitesi herkesde olmadığı için required kullanmaya gerek yok.-->
+
+            <br><br>
+
+            <label for="sifre">Şifre:</label>
+            <input type="password" id="sifre" name="sifre" required> <!-- password türü input elemanı, kullanıcının şifre girmesini sağlar. girilen karakterler gizlenir.-->
+            <br><br>
+
+            <label for="telefonno">Telefon Numaranız:</label>
+            <input type="number" id="telefonno" name="telefonno" min="0" max="10000000000" step="1" placeholder="Örn: 5510123456" required> <!-- number türü input elemanı, kullanıcının sadece sayı girmesini sağlar. min ve max özellikleri ile girilebilecek en küçük ve en büyük değer belirlenir. step özelliği ilede artış miktarı belirlenir.-->
+
+            <br><br>
+
+            <label for="dogum">Doğum Tarihi:</label>
+            <input type="date" id="dogum" name="dogum"> <!-- date türü input elemanı, kullanıcının tarih seçmesini sağlar.-->
+            <br><br>
+
+            <label for="cinsiyet">Cinsiyet:</label>
+            <input type="radio" id="erkek" name="cinsiyet" value="erkek">
+            <label for="erkek">Erkek</label>
+            <input type="radio" id="kadin" name="cinsiyet" value="kadin">
+            <label for="kadin">Kadın</label>
+            <br><br>
+
+            <label for="sehir">Şehir:</label>
+            <select id="sehir" name="sehir">
+                <option value="antalya">Antalya</option>
+                <option value="istanbul">İstanbul</option>
+                <option value="ankara">Ankara</option>
+                <option value="izmir">İzmir</option>
+                <option value="bursa">Bursa</option>
+            </select>
+            <br><br>
+
+            <input type="checkbox" id="sozlesme" name="sozlesme" required>
+            <label for="sozlesme">Kullanım Şartlarını Kabul Ediyorum</label>
+            <br><br>
+
+            <button type="submit">Kayıt Ol</button> <!-- button elemanı ile buton oluşturulur. type özelliği ile butonun türü belirlenir. submit türü buton, form verilerini gönderir. eğer butona bir text girmezsek sistem dilinde varsayılan olan submit yazısı gözükür.-->
+            <button type="reset">Temizle</button> <!-- reset türü buton, form elemanlarını temizler.-->
+
+        </form>
+
+
+
+        
+    </body>
+
+</html>
