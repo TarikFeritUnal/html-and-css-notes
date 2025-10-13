@@ -1,0 +1,78 @@
+<!--Tablolar satır ve sütunlardan oluşur.satır ve sütunların kesiştiği yerde adına hücre denilen kutucuklar oluşur.-->
+<!-- <tr> etiketi satırları, <td> etiketi sütunları oluşturur.-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+        <h1>Tablo Oluşturma</h1>
+
+        <table border="5"> <!--tablo oluşturmak için table etiketi kullanılır-->
+            <tr><td>Ad Soyad:</td> <td>Tarık Ferit Ünal</td></tr>
+            <tr><td>Doğum Yeri:</td> <td>Antalya</td></tr>
+            <tr><td>Yaş:</td> <td>20</td></tr>
+            <tr><td>Meslek:</td> <td>Öğrenci</td></tr>
+        </table>
+
+        <br>
+
+        <table border="5">
+            <!--caption thead tbody tfoot gibi elementlerle tabloyu oluşturmamız etiketlere ayrı ayrı css kodu yazabilmemizi sağlar daha rahat özelleştirilebilir hale gelir.-->
+            <caption>Ülke Nüfusları</caption> <!--caption etiketi tablo başlığı eklemek için kullanılır-->
+
+            <thead> <!--thead etiketi tablo başlıklarını belirtmek için kullanılır-->
+                <tr><th>Ülke</th> <th>Nüfus</th></tr> <!--th etiketi tablo başlık hücrelerini belirtmek için kullanılır-->
+            </thead>
+
+            <tbody> <!--tbody etiketi tablo gövdesini belirtmek için kullanılır-->
+                <tr><td>Türkiye</td> <td>85M</td></tr>
+                <tr><td>Almanya</td> <td>83M</td></tr>
+                <tr><td>Fransa</td> <td>67M</td></tr>
+                <tr><td>İtalya</td> <td>60M</td></tr>
+                <tr><td>İspanya</td> <td>47M</td></tr>
+            </tbody>
+
+            <tfoot> <!--tfoot etiketi tablo alt bilgisini belirtmek için kullanılır-->
+                <tr><td>Toplam:</td> <td>342M</td></tr>
+            </tfoot>
+
+        </table>
+
+        <br>
+
+        <h1>Hücre Birleştirme:</h1> <!--colspan ve rowspan özellikleri ile hücre birleştirme işlemi yapılabilir.-->
+        <!--colspan özelliği ile yatayda hücre birleştirme yapılabilir.yani satırdaki hücreleri birleştirir.-->
+        <!--rowspan özelliği ile dikeyde hücre birleştirme yapılabilir.yani sütundaki hücreleri birleştirir.-->
+        <table border="5">
+            <tr>
+                <th colspan="2">Kişisel Bilgiler</th> <!--2 hücre yatayda birleştirildi-->
+                <th rowspan="2">Fotoğraf</th> <!--2 hücre dikeyde birleştirildi-->
+            </tr>
+            <tr>
+                <td>Ad Soyad:</td> <td>Tarık Ferit Ünal</td>
+            </tr>
+            <tr>
+                <td>Doğum Yeri:</td> <td>Antalya</td> 
+                <td><img src="image (1).jpg" alt="fotoğraf" width="120px"></td>
+            </tr>
+            <tr>
+                <td>Yaş:</td> <td>20</td> 
+            </tr>
+            <tr>
+                <td>Meslek:</td> <td>Öğrenci</td> 
+            </tr>
+
+        
+    </body>
+
+</html>
