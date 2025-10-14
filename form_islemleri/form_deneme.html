@@ -21,7 +21,7 @@
 
         <form name="kayit" action="kayit.js" method="get"> <!-- form elemanı oluşturulur. action özelliği ile verilerin gönderileceği sayfa belirlenir. method özelliği ile gönderme yöntemi belirlenir.-->
             <label for="ad">Adınız:</label> <!-- label elemanı ile form elemanlarına etiket eklenir. for özelliği ile hangi form elemanına etiket ekleneceği belirlenir.-->
-            <input type="text" id="ad" name="ad" required> <!-- bir form elemanı oluşturmak için input elemanı kullanılır.type elemanı ilede bu elemanın ne tür bir eleman olduğu belirlenir.-->
+            <input type="text" id="ad" name="ad" required autofocus> <!-- bir form elemanı oluşturmak için input elemanı kullanılır.type elemanı ilede bu elemanın ne tür bir eleman olduğu belirlenir.--> <!--autofocus özelliği ile otomatik olarak sayfa açıldığında metin kutusunda imleç yanıp sönmeye başlar.-->
             <br><br>
 
             <label for="soyad">Soyadınız:</label>
@@ -65,10 +65,29 @@
                 <option value="izmir">İzmir</option>
                 <option value="bursa">Bursa</option>
             </select>
+
+            <br><br>
+            <p>Önerileriniz:</p>
+            <textarea name="oneri" id="oneri" rows="3" cols="50">
+                
+            </textarea>
+
+            <br><br>
+            <p>Medeni Durumu:</p>
+            <input type="checkbox" name="evli" id="evli"> Evli
+            
+            <br><br>
+            <input type="checkbox" id="sozlesme" name="sozlesme" required> <!-- checkbox türü input elemanı, kullanıcının bir veya daha fazla seçenek işaretlemesini sağlar.chechboxlarda name değeri birbirinden farklı olmak zorunda.--> 
+            <label for="sozlesme">Kullanım Şartlarını Kabul Ediyorum</label>
             <br><br>
 
-            <input type="checkbox" id="sozlesme" name="sozlesme" required>
-            <label for="sozlesme">Kullanım Şartlarını Kabul Ediyorum</label>
+            <p>Almak istediğiniz kursları seçiniz:</p>
+            <input type="radio" id="html" name="kurslar" value="html" checked> HTML KURSU<br> <!-- radio türü input elemanı, kullanıcının bir seçenek işaretlemesini sağlar. radio butonlarında name değeri aynı olmak zorunda. checked komutu ile form elemanı varsayılan olarak seçili gelir.-->
+            <input type="radio" id="css" name="kurslar" value="css"> CSS KURSU<br> <!--her radio butonunun id ve value değeri farklı olmak zorunda.name değeri aynı olmak zorundadır.-->
+            <input type="radio" id="js" name="kurslar" value="js"> JAVASCRİPT KURSU<br> 
+            <input type="radio" id="php" name="kurslar" value="php"> PHP KURSU<br> <!--eğer birden fazla kurs seçilebilmesi isteniyorsa radio butonları yerine checkbox kullanılmalıdır.-->
+            <input type="radio" id="python" name="kurslar" value="python"> PYTHON KURSU<br>
+
             <br><br>
 
             <button type="submit">Kayıt Ol</button> <!-- button elemanı ile buton oluşturulur. type özelliği ile butonun türü belirlenir. submit türü buton, form verilerini gönderir. eğer butona bir text girmezsek sistem dilinde varsayılan olan submit yazısı gözükür.-->
