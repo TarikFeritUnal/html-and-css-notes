@@ -19,7 +19,7 @@
         
         <h1>Üye Kayıt Formu</h1>
 
-        <form name="kayit" action="kayit.js" method="get"> <!-- form elemanı oluşturulur. action özelliği ile verilerin gönderileceği sayfa belirlenir. method özelliği ile gönderme yöntemi belirlenir.-->
+        <form name="kayit" action="kayit.js" method="get" target="_blank"> <!-- form elemanı oluşturulur. action özelliği ile verilerin gönderileceği sayfa belirlenir. method özelliği ile gönderme yöntemi belirlenir.--> <!-- target özelliği ile form verilerinin gönderileceği sayfanın nerede açılacağı belirlenir. _blank değeri ile yeni bir sekmede açılır.-->
             <label for="ad">Adınız:</label> <!-- label elemanı ile form elemanlarına etiket eklenir. for özelliği ile hangi form elemanına etiket ekleneceği belirlenir.-->
             <input type="text" id="ad" name="ad" required autofocus> <!-- bir form elemanı oluşturmak için input elemanı kullanılır.type elemanı ilede bu elemanın ne tür bir eleman olduğu belirlenir.--> <!--autofocus özelliği ile otomatik olarak sayfa açıldığında metin kutusunda imleç yanıp sönmeye başlar.-->
             <br><br>
@@ -58,7 +58,7 @@
             <br><br>
 
             <label for="sehir">Şehir:</label>
-            <select id="sehir" name="sehir"> <!-- select elemanı ile açılır liste oluşturulur. içine option elemanları yerleştirilir.-->
+            <select id="sehir" name="sehir" size="1" multiple> <!-- select elemanı ile açılır liste oluşturulur. içine option elemanları yerleştirilir.--> <!-- size özelliği ile açılır listenin kaç seçenek göstereceği belirlenir.--> <!-- multiple özelliği ile birden fazla seçenek seçilebilir. ctrl ye basılı tutarak yada mac lerde command tuşu ile-->
                 <option value="">Seçiniz</option> <!-- value özelliği ile seçeneğin değeri belirlenir. eğer kullanıcı bir seçenek seçmezse boş değer gönderilir.-->
                 <option value="istanbul">İstanbul</option> <!-- her option elemanının value değeri farklı olmak zorunda.-->
                 <option value="ankara">Ankara</option> 

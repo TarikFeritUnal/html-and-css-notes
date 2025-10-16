@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Datalist Elemanı</h2>
+
+<p>Datalist elemanı, bir input elemanı için önceden tanımlanmış seçeneklerden oluşan bir liste belirtir.</p>
+
+<form action="/action_page.php">
+  <input list="browsers" name="browser">
+  <datalist id="browsers"> <!-- datalist elemanı ile seçenekler tanımlanır. id özelliği ile datalist elemanına bir kimlik verilir. input elemanının list özelliği ile bu kimlik belirtilir.-->
+    <option value="Chrome">
+    <option value="Firefox">
+    <option value="Edge">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+
+  0
+  <input type="range" id="a" name="a" value="50"> <!-- range türü input elemanı, kullanıcının bir aralıkta değer seçmesini sağlar. value özelliği ile başlangıç değeri belirlenir.başlangıcı ortasıdır yani girilen değerin değer kadar eksiği ve fazlası arasında seçim yapılabilir.-->
+  100
+
+
+</form>
+
+</body>
+</html>

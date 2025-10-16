@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Form Verilerini Fieldset ile Gruplama</h2>
+
+<p>Fieldset elemanı bir formdaki ilgili verileri gruplamak için kullanılır ve legend elemanı fieldset elemanı için bir başlık tanımlar.</p>
+
+<form action="/action_page.php">
+  <fieldset> <!-- fieldset elemanı ile form elemanları gruplandırılır.-->
+    <legend>Personalia:</legend> <!-- legend elemanı ile fieldset elemanına başlık eklenir.-->
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="Tarık Ferit"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Ünal"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+</body>
+</html>
