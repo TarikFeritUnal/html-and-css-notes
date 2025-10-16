@@ -17,7 +17,7 @@
 
     <body>
         
-        <h1>Üye Kyıt Formu</h1>
+        <h1>Üye Kayıt Formu</h1>
 
         <form name="kayit" action="kayit.js" method="get"> <!-- form elemanı oluşturulur. action özelliği ile verilerin gönderileceği sayfa belirlenir. method özelliği ile gönderme yöntemi belirlenir.-->
             <label for="ad">Adınız:</label> <!-- label elemanı ile form elemanlarına etiket eklenir. for özelliği ile hangi form elemanına etiket ekleneceği belirlenir.-->
@@ -58,12 +58,13 @@
             <br><br>
 
             <label for="sehir">Şehir:</label>
-            <select id="sehir" name="sehir">
-                <option value="antalya">Antalya</option>
-                <option value="istanbul">İstanbul</option>
-                <option value="ankara">Ankara</option>
+            <select id="sehir" name="sehir"> <!-- select elemanı ile açılır liste oluşturulur. içine option elemanları yerleştirilir.-->
+                <option value="">Seçiniz</option> <!-- value özelliği ile seçeneğin değeri belirlenir. eğer kullanıcı bir seçenek seçmezse boş değer gönderilir.-->
+                <option value="istanbul">İstanbul</option> <!-- her option elemanının value değeri farklı olmak zorunda.-->
+                <option value="ankara">Ankara</option> 
                 <option value="izmir">İzmir</option>
                 <option value="bursa">Bursa</option>
+                <option selected value="antalya">Antalya</option> <!-- option elemanı ile açılır listeye seçenek eklenir. value özelliği ile seçeneğin değeri belirlenir.--> <!-- selected özelliği ile varsayılan olarak seçili gelecek seçenek belirlenir.-->
             </select>
 
             <br><br>

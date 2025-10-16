@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resimli Onay Formu</title>
+    </head>
+
+    <body>
+        <h1>Resimli Onay Formu</h1>
+
+        <form  name="onay" action="onay.js" method="get">
+            <label for="ad">Adınız:</label>
+            <input type="text" id="ad" name="ad" placeholder="Adınız" required>
+            <br><br>
+            <label for="soyad">Soyadınız:</label>
+            <input type="text" id="soyad" name="soyad" placeholder="Soyadınız" required>
+            <br><br>
+            <label for="sifre">Şifreniz:</label>
+            <input type="password" id="sifre" name="sifre" placeholder="Şifreniz" required> <!-- password türü input elemanı, girilen karakterleri gizler.-->
+            <br><br>
+            <input type="image" src="25387-5-submit-button-clipart.png" alt="Onay Resmi" width="130"> <!-- image türü input elemanı, resim butonu oluşturur. src özelliği ile resim dosyasının yolu belirlenir. alt özelliği ile resim yüklenemezse gösterilecek metin belirlenir. width ve height özellikleri ile resmin genişlik ve yükseklik değerleri belirlenir.-->
+        </form>
+
+    </body>
+
+</html>
